@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="libraries/p5.js"></script>
+    <script type="text/javascript" src="libraries/p5.dom.js"></script>
+    <script type="text/javascript" src="libraries/matter.js"></script>
+    <!--<script type="text/javascript" src="chat.js"></script>
+    <script type="text/javascript" src="ball.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plinko Online</title>
+</head>
+<body>
+    <h1>Plinko Online</h1>
+    <div id="player-num"></div>
+    <div id="timer"></div>
+    <div id="chat">
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+            <div id="logs"></div>
+        </div>
+        <input id="message" type="text" placeholder="Message" />
+        <button id="send">Send</button>
+    </div>
+
+    <canvas width="300" height="300"></canvas>
+
+    <button class="pocket" id="p1">0</button>
+    <button class="pocket" id="p2">0</button>
+    <button class="pocket" id="p3">0</button>
+    <button class="pocket" id="p4">0</button>
+    <button class="pocket" id="p5">0</button>
+    <script src="chat.js"></script>
+</body>
+</html>

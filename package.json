@@ -1,0 +1,32 @@
+{
+  "name": "plinko-online",
+  "version": "1.0.0",
+  "description": "Play plinko with friends!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LanceFun/Plinko-Online.git"
+  },
+  "keywords": [
+    "Plinko",
+    "Online",
+    "Multiplayer",
+    "Friends"
+  ],
+  "author": "Russell Davidson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LanceFun/Plinko-Online/issues"
+  },
+  "homepage": "https://github.com/LanceFun/Plinko-Online#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "matter-js": "^0.14.2",
+    "p5": "^0.7.2",
+    "socket.io": "^2.1.1"
+  }
+}
