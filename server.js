@@ -62,7 +62,7 @@ io.on('connection', (socket) => {
 
     // Handle chat event
     socket.on('chat', function(data) {
-        data.message = Cleaner.clear(data.message);
+        //data.message = Cleaner.clear(data.message);
         io.sockets.emit('chat', data);
     });
 
