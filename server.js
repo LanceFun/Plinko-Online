@@ -9,8 +9,8 @@ const messagecleaner = require('./MessageCleaner');
 //const Plinko = require('./plinko');
 
 
-const Filter = require('bad-words');
-var filter = new Filter();
+const badwords = require('bad-words');
+var Cleaner = new badwords();
 const FPS = 60;
 
 var moderator = {};
@@ -62,7 +62,7 @@ io.on('connection', (socket) => {
 
     // Handle chat event
     socket.on('chat', function(data) {
-        data.message = filter.clear(data.message);
+        data.message = Cleaner.clear(data.message);
         io.sockets.emit('chat', data);
     });
 
